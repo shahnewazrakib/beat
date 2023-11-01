@@ -41,7 +41,7 @@ function Gallery() {
                 key={index}
                 src={headphone}
                 alt="Headphone"
-                className="sm:w-[90%] border border-gray rounded-lg cursor-pointer"
+                className="sm:w-[90%] border border-gray rounded-lg sm:cursor-pointer"
                 onClick={() => openLightbox(index)}
               />
             );

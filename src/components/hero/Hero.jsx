@@ -47,7 +47,7 @@ function Hero() {
                 <img
                   src={headphone}
                   onClick={() => setActiveHeadpone(index)}
-                  className="sm:w-[100px] cursor-pointer"
+                  className="sm:w-[100px] sm:cursor-pointer"
                 />
               </div>
             );

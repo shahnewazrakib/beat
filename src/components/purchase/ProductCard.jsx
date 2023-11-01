@@ -45,7 +45,7 @@ function ProductCard({ title, price }) {
 }
 
 const styles = {
-  color: "w-4 lg:w-5 h-4 lg:h-5 rounded-full cursor-pointer",
+  color: "w-4 lg:w-5 h-4 lg:h-5 rounded-full sm:cursor-pointer",
 };
 
 export default ProductCard;
