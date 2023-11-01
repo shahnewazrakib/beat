@@ -8,8 +8,8 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-light_gray p-8">
-      <div className="container grid grid-cols-4 text-[15px]">
+    <footer className="bg-light_gray px-2 sm:px-8 py-8">
+      <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-[15px] gap-6 md:gap-0 sm:gap-8">
         <div className={`${styles.grid__item}`}>
           <img src={Logo} alt="Beat" className="w-[100px]" />
           <p className="text-dark_gray">
@@ -18,7 +18,7 @@ function Footer() {
           </p>
         </div>
 
-        <div className={`${styles.grid__item} pl-20`}>
+        <div className={`${styles.grid__item} sm:pl-14 md:pl-5 lg:pl-20`}>
           <h1 className={styles.heading}>Products</h1>
           <div className={styles.links}>
             <a href="#">View All</a>
@@ -28,7 +28,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className={`${styles.grid__item} pl-20`}>
+        <div className={`${styles.grid__item} md:pl-5 lg:pl-20`}>
           <h1 className={styles.heading}>Company</h1>
           <div className={styles.links}>
             <a href="#">About Us</a>
@@ -38,7 +38,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className={`${styles.grid__item} pl-10`}>
+        <div className={`${styles.grid__item} sm:pl-14 md:pl-0 lg:pl-10`}>
           <h1 className={styles.heading}>Follow Us</h1>
           <div className="flex items-center gap-3">
             <a href="#" className={styles.icon}>
@@ -63,7 +63,7 @@ function Footer() {
 
 const styles = {
     grid__item: "space-y-4",
-    heading: "text-2xl font-semibold",
+    heading: "text-xl lg:text-2xl font-semibold",
     links:"flex flex-col gap-3 text-dark_gray",
     icon:"shadow-default w-[35px] h-[35px] rounded-full bg-white flex items-center justify-center text-sm"
 

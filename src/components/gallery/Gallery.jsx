@@ -22,23 +22,26 @@ function Gallery() {
   };
 
   return (
-    <section className="container mt-24">
-      <h1 className="text-4xl text-center font-semibold">Product Gallery</h1>
-      <div className="flex gap-16 mt-16">
+    <section className="container mt-14 sm:mt-16 md:mt-18 2xl:mt-24">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-semibold">
+        Product Gallery
+      </h1>
+      <div className="flex sm:flex-row flex-col-reverse gap-6 2xl:gap-16 mt-8 md:mt-16">
         <div className="flex-1">
           <iframe
             src="https://www.youtube.com/embed/V2i1YkfrM54?si=h57yyEyhedzXgN8V"
             allowFullScreen
-            className="w-full h-full rounded-lg"
+            className="w-full h-[200px] sm:h-full rounded-lg"
           ></iframe>
         </div>
-        <div className="grid grid-cols-2 gap-6 flex-1">
+        <div className="grid grid-cols-2 gap-4 2xl:gap-6 flex-1">
           {headphones.map((headphone, index) => {
             return (
               <img
+                key={index}
                 src={headphone}
                 alt="Headphone"
-                className="w-[90%] border border-gray rounded-lg cursor-pointer"
+                className="sm:w-[90%] border border-gray rounded-lg cursor-pointer"
                 onClick={() => openLightbox(index)}
               />
             );
@@ -56,6 +59,7 @@ function Gallery() {
           { src: BlackHeadphone },
         ]}
       />
+      <span id="purchase"></span>
     </section>
   );
 }

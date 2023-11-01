@@ -15,10 +15,10 @@ function ProductCard({ title, price }) {
   ];
 
   return (
-    <div className="bg-white rounded-lg shadow-default py-6 px-8">
-      <img src={headphones[activeHeadphone]} alt={title} />
-      <p className="text-2xl font-medium">${price}</p>
-      <p className="text-lg ">{title}</p>
+    <div className="bg-white rounded-lg shadow-default py-4 lg:py-6 px-4 lg:px-8">
+      <img className="sm:w-full w-2/3 mx-auto" src={headphones[activeHeadphone]} alt={title} />
+      <p className="text-lg lg:text-2xl font-medium">${price}</p>
+      <p className="lg:text-lg">{title}</p>
       <div className="flex items-center gap-2 mt-3">
         <div
           onClick={() => setActiveHeadpone(0)}
@@ -37,7 +37,7 @@ function ProductCard({ title, price }) {
           className={`${styles.color} bg-black`}
         ></div>
       </div>
-      <button className="w-full p-2 rounded-full bg-white border border-black text-black mt-8 transition duration-200 hover:bg-black hover:text-white">
+      <button className="lg:text-base text-sm w-full p-2 rounded-full bg-white border border-black text-black mt-4 lg:mt-8 transition duration-200 hover:bg-black hover:text-white">
         Add To Cart
       </button>
     </div>
@@ -45,7 +45,7 @@ function ProductCard({ title, price }) {
 }
 
 const styles = {
-  color: "w-5 h-5 rounded-full cursor-pointer",
+  color: "w-4 lg:w-5 h-4 lg:h-5 rounded-full cursor-pointer",
 };
 
 export default ProductCard;

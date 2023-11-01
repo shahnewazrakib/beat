@@ -11,6 +11,7 @@ export default {
         gray: "#D9D9D9",
         light_gray: "#F8F8F8",
         black: "#000",
+        transparent: "#0000"
       },
       screens: {
         "2xl": "1280px",
@@ -20,7 +21,7 @@ export default {
         padding: "1rem",
       },
       boxShadow: {
-        default: "0 5px 17px rgb(0, 0, 0, 0.07)",
+        default: "0 2px 8px rgb(0, 0, 0, 0.15)",
       },
     },
   },

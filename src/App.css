@@ -44,6 +44,10 @@ body {
 
 
 /* Reviews -- Swiper pagination  */
+.swiper {
+    padding: 2rem 1rem 3rem 1rem !important;
+}
+
 span.swiper-pagination-bullet {
     height: 10px !important;
     width: 10px !important;
@@ -51,4 +55,11 @@ span.swiper-pagination-bullet {
 
 .swiper-pagination {
     bottom: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .swiper {
+        padding-left: 0.4rem !important;
+        padding-right: 0.4rem !important;
+    }
 }
