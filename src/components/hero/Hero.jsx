@@ -43,12 +43,13 @@ function Hero() {
         <div className="flex items-center gap-4 pt-4 sm:pt-6">
           {headphones.map((headphone, index) => {
             return (
-              <img
-                key={index}
-                src={headphone}
-                onClick={() => setActiveHeadpone(index)}
-                className="w-full sm:w-[100px] cursor-pointer"
-              />
+              <div key={index}>
+                <img
+                  src={headphone}
+                  onClick={() => setActiveHeadpone(index)}
+                  className="sm:w-[100px] cursor-pointer"
+                />
+              </div>
             );
           })}
         </div>
